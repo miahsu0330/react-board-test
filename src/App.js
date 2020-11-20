@@ -42,7 +42,9 @@ const Button = styled.button`
 function TodoItem({ size, todo, handleDeleteTodo, handleToggleIsDone }) {
   return (
     <TodoItemWrapper data-todo-id={todo.id}>
-      <TodoConent size={size}>{todo.content}</TodoConent>
+      <TodoConent className="" size={size}>
+        {todo.content}
+      </TodoConent>
       <TodoButtonWrapper>
         <Button
           onClick={() => {
